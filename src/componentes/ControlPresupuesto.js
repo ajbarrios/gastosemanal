@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import Presupuesto from "./Presupuesto";
 import Restante from "./Restante";
 
@@ -13,5 +14,10 @@ class ControlPresupuesto extends Component {
     );
   }
 }
+
+ControlPresupuesto.propTypes = {
+  presupuesto: PropTypes.string.isRequired,
+  restante: PropTypes.string.isRequired,
+};
 
 export default ControlPresupuesto;

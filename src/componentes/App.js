@@ -25,7 +25,8 @@ class App extends Component {
     let restar = Number(cantidad);
     let { restante } = this.state;
     restante -= restar;
-    this.setState( { restante });
+    restante = String(restante);
+    this.setState({ restante });
   };
 
   componentDidMount() {
